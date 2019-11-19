@@ -93,7 +93,8 @@ def main():
 	wikipedia.set_lang("it")
 	max_search_results = 3
 	search_choices = list(["Summary", "Full Page", "Full Page in HTML", "Get Images Link", "Get Page Url"])
-	to_search = "fabi fiba"
+	# to_search = "fabi fiba"
+	to_search = input("What are you looking for?\n")
 	to_search = wikipedia.suggest(to_search)
 	print("I'm looking for %s" % to_search)
 	search_results = wikipedia.search(to_search, results = max_search_results)
