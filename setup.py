@@ -19,7 +19,7 @@ setup(
 	author_email         = 'alessandroclion18@gmail.com',
 	url                  = url,
 	license              = 'MIT License',
-	python_requires      = '>=3.6.0',
+	python_requires      = '>=3.5.0',
 	install_requires     = requires,
 	packages             = find_packages(),
 	include_package_data = True,
