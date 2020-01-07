@@ -1,7 +1,16 @@
 import sys, os
-import wikipedia
-import urllib.request
-from urllib.parse import urlparse
+
+if sys.version_info[0] < 3:
+	raise Exception("Must be using Python 3")
+
+try:
+	import subprocess
+	import wikipedia
+	import urllib.request
+	from urllib.parse import urlparse
+except ImportError as e:
+	# subprocess.check_call(["pip3", "install", "-r", "requirements.txt"])
+	pass
 
 def draw_input(text, options):
 	while True:
