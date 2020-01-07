@@ -23,5 +23,5 @@ setup(
 	install_requires     = requires,
 	packages             = find_packages(),
 	include_package_data=True,
-	entry_points         = {'console_scripts': ['search_wiki = search_wikipedia.__main__:main']}
+	entry_points         = {'console_scripts': ['search_wiki = search_wiki:main']}
 	)
