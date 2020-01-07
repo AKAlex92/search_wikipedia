@@ -9,7 +9,7 @@ try:
 	import urllib.request
 	from urllib.parse import urlparse
 except ImportError as e:
-	# subprocess.check_call(["pip3", "install", "-r", "requirements.txt"])
+	subprocess.check_call(["pip3", "install", "-r", "requirements.txt"])
 	pass
 
 def draw_input(text, options):
