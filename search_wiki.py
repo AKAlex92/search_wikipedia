@@ -95,7 +95,8 @@ def main():
 	search_choices = list(["Summary", "Full Page", "Full Page in HTML", "Get Images Link", "Get Page Url"])
 	# to_search = "fabi fiba"
 	to_search = input("What are you looking for?\n")
-	to_search = wikipedia.suggest(to_search)
+	if wikipedia.suggest(to_search) is not None:
+		to_search = wikipedia.suggest(to_search)
 	print("I'm looking for %s" % to_search)
 	search_results = wikipedia.search(to_search, results = max_search_results)
 	print(search_results)
