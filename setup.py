@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-
+version = '1.0'
 description = 'A Python 3 utility to interact with Wikipedia'
 url = 'https://github.com/AKAlex92/search_wikipedia'
 requires = ['urllib3==1.25.7',
