@@ -112,7 +112,9 @@ def main():
 		for sugg in search_results_suggested:
 			search_results.append(sugg)
 	print("I'm looking for %s" % to_search)
-	print(search_results)
+	if len(search_results) == 0:
+		print("No results")
+		sys.exit(1)
 	which_one = draw_menu(search_results)
 	term = search_results[which_one]
 	which_one = draw_menu(search_choices)
