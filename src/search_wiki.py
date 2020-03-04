@@ -104,10 +104,14 @@ def main():
 	search_choices = list(["Summary", "Full Page", "Full Page in HTML", "Get Images Link", "Get Page Url"])
 	# to_search = "fabi fiba"
 	to_search = input("What are you looking for?\n")
+	search_results = wikipedia.search(to_search, results=max_search_results)
+	print("Looking for suggested research %s" % wikipedia.suggest(to_search))
 	if wikipedia.suggest(to_search) is not None:
-		to_search = wikipedia.suggest(to_search)
+		to_search_suggested = wikipedia.suggest(to_search)
+		search_results_suggested = wikipedia.search(to_search_suggested, results=max_search_results)
+		for sugg in search_results_suggested:
+			search_results.append(sugg)
 	print("I'm looking for %s" % to_search)
-	search_results = wikipedia.search(to_search, results = max_search_results)
 	print(search_results)
 	which_one = draw_menu(search_results)
 	term = search_results[which_one]

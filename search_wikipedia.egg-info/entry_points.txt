@@ -1,0 +1,3 @@
+[console_scripts]
+search_wiki = src.search_wiki:main
+

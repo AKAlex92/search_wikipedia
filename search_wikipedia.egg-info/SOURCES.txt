@@ -1,0 +1,8 @@
+README.md
+setup.py
+search_wikipedia.egg-info/PKG-INFO
+search_wikipedia.egg-info/SOURCES.txt
+search_wikipedia.egg-info/dependency_links.txt
+search_wikipedia.egg-info/entry_points.txt
+search_wikipedia.egg-info/requires.txt
+search_wikipedia.egg-info/top_level.txt
